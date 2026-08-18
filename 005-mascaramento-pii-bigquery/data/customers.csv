@@ -1,0 +1,3 @@
+customer_id,name,email,tax_id,city
+c1,Ana Souza,ana@example.com,12345678901,Sao Paulo
+c2,Bruno Lima,bruno@example.com,98765432100,Curitiba

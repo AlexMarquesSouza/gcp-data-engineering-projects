@@ -1,0 +1,4 @@
+{"uuid":"u1","sequence":1,"change_type":"UPDATE-INSERT","row":{"customer_id":"c1","name":"Ana","city":"Campinas"}}
+{"uuid":"u2","sequence":2,"change_type":"INSERT","row":{"customer_id":"c3","name":"Carla","city":"Recife"}}
+{"uuid":"u3","sequence":3,"change_type":"DELETE","row":{"customer_id":"c2"}}
+{"uuid":"u1","sequence":1,"change_type":"UPDATE-INSERT","row":{"customer_id":"c1","name":"Ana","city":"Campinas"}}

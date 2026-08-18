@@ -1,0 +1,1 @@
+{"tasks":{"extract":{"upstream":[],"failures_before_success":0},"validate":{"upstream":["extract"],"failures_before_success":1},"transform":{"upstream":["validate"],"failures_before_success":0},"load":{"upstream":["transform"],"failures_before_success":0}},"retries":2}

@@ -1,0 +1,14 @@
+config {
+  type: "incremental",
+  uniqueKey: ["order_id"],
+  assertions: {
+    uniqueKey: ["order_id"],
+    nonNull: ["order_id", "order_date", "customer_id", "amount"],
+    rowConditions: ["amount > 0"]
+  },
+  bigquery: { partitionBy: "order_date" }
+}
+
+SELECT order_id, order_date, customer_id, amount
+FROM ${ref("raw_orders")}
+${when(incremental(), `WHERE order_date > (SELECT MAX(order_date) FROM ${self()})`)}

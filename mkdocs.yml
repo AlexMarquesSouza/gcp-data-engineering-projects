@@ -1,0 +1,45 @@
+site_name: Radar de Engenharia de Dados — GCP
+site_description: Projetos práticos, locais e incrementais de Engenharia de Dados
+use_directory_urls: false
+docs_dir: .
+site_dir: ../site-local/GCP
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    primary: indigo
+    accent: blue
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+exclude_docs: |
+  .git/**
+  **/.git/**
+  **/__pycache__/**
+  **/data/**
+  **/src/**
+  **/tests/**
+  mkdocs.yml
+nav:
+  - Início: README.md
+  - Padrão didático: docs/PADRAO-DIDATICO.md
+  - 'Projeto 00 — Configuração do ambiente GCP': 000-configuracao-ambiente/README.md
+  - 'Preparação de carga particionada no BigQuery': 001-carga-particionada-bigquery/README.md
+  - 'Consumidor idempotente com dead-letter': 002-consumidor-idempotente-pubsub/README.md
+  - 'Dataform incremental com qualidade de dados': 003-dataform-incremental-qualidade/README.md
+  - 'Aplicação de eventos CDC com Datastream e BigQuery': 004-cdc-datastream-bigquery/README.md
+  - 'Mascaramento de PII no BigQuery': 005-mascaramento-pii-bigquery/README.md
+  - 'DAG com dependências e retries': 006-composer-dag-dependencies/README.md
+  - 'Detector de hotspots em row keys do Bigtable': 007-bigtable-rowkey-hotspot/README.md
+  - 'Eventos atrasados no Dataflow': 008-dataflow-late-events/README.md
+  - 'Advisor de clustering no BigQuery': 009-bigquery-clustering-advisor/README.md
+  - 'Validador de metadados do Dataplex Universal Catalog': 010-knowledge-catalog-metadata-validator/README.md
+  - 'Simulador de Row Access Policies do BigQuery': 011-bigquery-row-access-policy-simulator/README.md
+  - 'Validador de política CMEK para BigQuery': 012-bigquery-cmek-policy-validator/README.md
+  - 'Estimador de capacidade em slots do BigQuery': 013-bigquery-slot-capacity-estimator/README.md

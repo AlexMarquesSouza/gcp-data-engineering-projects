@@ -1,0 +1,1 @@
+{"required_aspects":["owner","domain","classification","freshness_sla"],"entries":[{"name":"bigquery.sales.orders","aspects":{"owner":"sales-data","domain":"commerce","classification":"Confidential","freshness_sla":"24h"}},{"name":"bigquery.sales.customers","aspects":{"owner":"crm-data","domain":"commerce","classification":"Restricted"}}]}

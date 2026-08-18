@@ -1,0 +1,1 @@
+{"principals_to_test":["group:south@example.com","group:national@example.com","user:unknown@example.com"],"policies":[{"name":"south_only","grantees":["group:south@example.com"],"column":"region","allowed_values":["SOUTH"]},{"name":"national","grantees":["group:national@example.com"],"column":"region","allowed_values":["SOUTH","SOUTHEAST","NORTH"]}]}
