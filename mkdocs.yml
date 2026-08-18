@@ -29,6 +29,7 @@ exclude_docs: |
 nav:
   - Início: README.md
   - Padrão didático: docs/PADRAO-DIDATICO.md
+  - Publicar o site: docs/PUBLICAR-SITE.md
   - 'Projeto 00 — Configuração do ambiente GCP': 000-configuracao-ambiente/README.md
   - 'Preparação de carga particionada no BigQuery': 001-carga-particionada-bigquery/README.md
   - 'Consumidor idempotente com dead-letter': 002-consumidor-idempotente-pubsub/README.md
